@@ -1,13 +1,6 @@
 
 #Declaração de todas as variáveis a serem utilizadas
-saldo = 0
 LIMITE_SAQUE = 500
-quantia_saque = 0
-saques_feitos = 0
-
-quantia_deposito = 0
-depositos_feitos = 0
-
 
 verificacao_login = False
 verificacao_cadastro = False
@@ -104,7 +97,11 @@ while True:
                 break
             else:
                 verificacao_login = False
-                
+        #conferir se o cpf e a conta informados estão de fato associados
+        if not contas_corrente[login_conta]["titular"] == login_usuario:
+            verificacao_login = False
+        
+        
         if verificacao_login == True: 
             while True:
                 opcao2 = int(input(menu2))
@@ -140,7 +137,7 @@ while True:
                     break
                     
         elif verificacao_login == False:
-            print("\n-----Usuário ou Conta não identificados-----")
+            print("\n-----Usuário ou Conta não identificados(ou Nenhuma relação entre eles)-----")
             continue
     elif opcao1 == 2:
         nome_completo_cadastro = input("Informe o nome completo: ")
