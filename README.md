@@ -46,5 +46,8 @@ No extrato devem estar listados todos os saques e depósitos. No final, deve con
 5.2. O número da conta é sequencial e se inicia em 1. Ja o número da agência é fixo: 0001.
 
 5.3. O usuário pode ter mais de uma conta, mas uma conta pertence somente a um usuário e pra existir precisa de um usuário.
- 
+
+## 📒Requisitos da versão 3
+
+1. O sistema deve implementar o paradigima orientação a objetos seguindo o diagrama de classes(presente nesse repositório).
 
