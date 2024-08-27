@@ -50,4 +50,4 @@ No extrato devem estar listados todos os saques e depósitos. No final, deve con
 ## 📒Requisitos da versão 3
 
 1. O sistema deve implementar o paradigima orientação a objetos seguindo o diagrama de classes(presente nesse repositório).
-
+2. O sistema deve armazenar os dados através de um banco de dados usando o SQLITE3.
